@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header > img{
+    width: 50%;
+    height: auto;
+    min-width: 300px;
+    border-radius: 50%;
+}
