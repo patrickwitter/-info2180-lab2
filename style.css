@@ -1,11 +1,108 @@
+/* Defalut Style and layout */
 body{
     margin: 0;
     padding: 0;
+    font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
 }
 
-header > img{
-    width: 50%;
+.container{
+    display: grid;
+    grid-template-columns: 2;
+}
+
+.intro{
+    grid-column: 1/3;
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .5em;
+}
+
+main{
+    grid-column: 1/2;
+    padding: 0 1em 0 3em;
+}
+
+aside{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-right: 2em;
+}
+
+footer{
+    grid-column: 1/3;
+    background-color: aqua;
+}
+
+/* Intro/Main header style */
+
+.intro{
+    background-color:  #63B3ED;
+    color: #FFFFFF;   
+}
+.intro > img{
+    width: 20%;
     height: auto;
     min-width: 300px;
     border-radius: 50%;
 }
+
+.intro > h1 {
+    font-size: 36px;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* Article/blog style */
+
+.blog1 img,.blog2 img{
+    float: left;
+    clear: both;
+    width: 10%;
+    margin: 1em 1em 0 0;
+
+}
+
+.blog1 h2 , .blog2 h2{
+    font-size: 32px;
+    color: #48BB78;
+}
+
+.blog1 span , .blog2 span{
+    color: #718096;
+
+}
+
+/* SideBar/ Aside style */
+#About h3{
+color: #000000;
+font-family:Georgia,'Times New Roman', Times, serif;
+
+}
+
+#About{
+    background-color: #E2E8F0;
+    padding: 0 1em 0 1em;
+}
+#SocialMedia h3, #Archives h3
+{
+    color:  #48BB78;
+    font-family:Georgia,'Times New Roman', Times, serif;
+}
+
+#SocialMedia a, #Archives a
+{
+    color: #4299E1;
+    text-decoration: none;
+}
+
+/* Footer style */
+
+footer{
+    background-color: #2C5282;
+    color: #FFFFFF;
+
+}
+
